@@ -1,0 +1,38 @@
+`include "disciplines.vams"
+`include "constants.vams"
+
+module pfdcp(up, dn, cp_out);
+
+input up, dn;
+inout cp_out;
+
+electrical up, dn;
+electrical cp_out;
+
+parameter real VDD = 1.8;
+parameter real vthresh = 0.5;
+parameter real I_nominal = 100u;
+parameter real mismatch = 0.05;
+parameter real R_out = 50M;
+
+real i_up, i_dn, target_current;
+
+analog begin
+@(initial_step) begin
+target_current = 0.0;
+i_up = I_nominal * (1.0 + mismatch / 2.0);
+i_dn = I_nominal * (1.0 - mismatch / 2.0);
+end
+
+if(V(up) > vthresh && V(dn) < vthresh  && V(cp_out) < (VDD - 0.1)) begin
+   target_current = i_up;
+end else if(V(dn) > vthresh && V(up) < vthresh  && V(cp_out) > 0.1) begin
+   target_current = -i_dn;
+end else begin
+   target_current = 0.0;
+end
+
+I(cp_out) <+ -target_current + (V(cp_out) / R_out);
+end
+endmodule
+
