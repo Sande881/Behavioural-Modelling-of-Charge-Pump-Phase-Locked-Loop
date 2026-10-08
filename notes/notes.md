@@ -1,0 +1,1 @@
+- OpenVAF is a compact device modelling compiler designed to model things like BJTs & MOSFETs, it does not support behavioural even-driven Verilog-A constructs, which we need to build the edge-triggered digital logic of a Phase-Frequency Detector. To overcome this, we must build the charge-pump only in OpenVAF and handle the digital logic using ngspice's XSPICE engine.
