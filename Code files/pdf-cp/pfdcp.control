@@ -1,0 +1,19 @@
+*execution
+
+.control
+
+osdi pfdcp.osdi
+
+source pfdcp.sp
+
+run
+
+plot v(ref) title "Reference Clock"
+
+plot v(Vfb) title "Feedback Clock"
+
+plot v(ref) v(fb) title "Clock Comparison"
+
+plot v(output) title "Output with Capacitive Load"
+
+.endc
