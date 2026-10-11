@@ -1,15 +1,15 @@
 # Project Title
 ## 1. Project Overview
 ### 1.1 Project Name
-> Behavioural Modelling of a Charge-Pumped PLL
+Behavioural Modelling of a Charge-Pumped PLL
 
 ### 1.2 Description
-> This project focuses on the continuous-time behavioral modeling, analog testbench creation, and structured Verification Planning (vPlan) of a Charge-Pumped Phase-Locked Loop (CP-PLL).
+This project focuses on the continuous-time behavioral modeling, analog testbench creation, and structured Verification Planning of a Charge-Pumped Phase-Locked Loop (CP-PLL).
 
 ### 1.3 Goals & Objectives
 - Write modular Verilog-A behavioral code for a CP-PLL.
 - Introduce physical circuit limitations into the models to verify loop stability under corner conditions.
-- Deliver a complete GitHub repository containing a formal vPlan matrix tracking metrics like lock time, acquisition range, reference spur levels, phase margin, and peak overshoot.
+- Deliver a complete GitHub repository containing a formal matrix tracking metrics like lock time, acquisition range, reference spur levels, phase margin, and peak overshoot.
 - Create automated simulation scripts using open-source tools to sweep control voltages and input frequency steps, generating waveform analysis.
 
 ### 1.4 Key Features
