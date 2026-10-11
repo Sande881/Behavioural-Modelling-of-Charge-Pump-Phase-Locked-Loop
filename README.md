@@ -59,3 +59,16 @@ This project focuses on the continuous-time behavioral modeling, analog testbenc
 - Constructed a mixed-signal ngspice testbench (`pfdcp.sp`) mapping reference and feedback clocks through XSPICE D-flip-flops to generate UP and DOWN states.
 - Verified the alignment of reference and feedback clock test pulses for accurate phase comparison.
 - Executed control scripts to generate waveform plots, successfully verifying both the mathematical step-response and realistic VDD-clamped outputs under a capacitive load.
+
+Graph:
+### Reference and Feedback Clock test inputs:
+
+<img width="697" height="540" alt="image" src="https://github.com/user-attachments/assets/799e94b5-660c-47ca-a079-faf32bd95b4a" />
+<img width="695" height="547" alt="image" src="https://github.com/user-attachments/assets/04746063-08b0-4f6d-9150-f8bf6fc6a55e" />
+
+### Output of Phase-Frequency Detector with Charge Pump
+
+<img width="682" height="532" alt="image" src="https://github.com/user-attachments/assets/fa55b320-ff34-4895-97ba-dc5f5b4c4868" />
+
+
+
