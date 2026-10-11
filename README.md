@@ -40,8 +40,8 @@ This project focuses on the continuous-time behavioral modeling, analog testbenc
 ### 3.1 Research Links & Resources
 | Date       | Link | Notes |
 |------------|------|-------|
-| YYYY-MM-DD | [OpenVAF Docs](#) | *Reference for compact device modeling capabilities* |
-| YYYY-MM-DD | [ngspice XSPICE](#) | *Reference for digital logic block implementation* |
+| 28/09/26 | [OpenVAF Docs](https://openvaf.github.io/docs/) | *Reference for compact device modeling capabilities* |
+| 28/09/26 | [ngspice XSPICE](https://ngspice.sourceforge.io/xspice.html) | *Reference for digital logic block implementation* |
 
 ### 3.2 Key Decisions & Changes
 - Due to compiler constraints, the PFD and CP implementations were split: the charge-pump is built purely in OpenVAF, while the PFD digital logic is handled externally.
