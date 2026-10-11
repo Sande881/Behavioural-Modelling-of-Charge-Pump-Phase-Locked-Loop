@@ -45,7 +45,7 @@ This project focuses on the continuous-time behavioral modeling, analog testbenc
 
 ### 3.2 Key Decisions & Changes
 - Due to compiler constraints, the PFD and CP implementations were split: the charge-pump is built purely in OpenVAF, while the PFD digital logic is handled externally.
-- Advanced non-idealities planned for later stages, specifically the CP current mismatch and finite output impedance, were implemented early in the foundational Verilog-A charge pump model (`pfdcp.vams`).
+- Advanced non-idealities planned for later stages, specifically the CP current mismatch and finite output impedance, were implemented early in the foundational Verilog-A charge pump model (`pfdcp.va`).
 
 ### 3.3 Issues & Solutions
 - **Issue:** OpenVAF cannot compile the event-driven Verilog-A constructs required for the PFD's edge-triggered digital logic.
